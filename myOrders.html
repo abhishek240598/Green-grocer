@@ -1,0 +1,186 @@
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Company name - orders</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Yeon+Sung&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main1.css">
+    </head>
+    <body>
+        <header class="header">
+            <img src="images/logo.png" alt="Logo image" class="logo-image">
+            <h1 class="company-title">Company Name</h1>
+            <button class="login" href="">Login / Signup</button>
+        </header>
+        
+        <nav class="nav-container">
+            <a id="nav-main" href="home.html">Home</a>
+            <a class="nav-items" href="products.html">Products</a>
+            <a class="nav-items" href="myOrders.html">My Orders</a>
+            <a class="nav-items" href="contact.html">Contact Us</a>
+        </nav>
+        
+        <!-- <section id="orders-section">
+            <section id="cart-items"></section>
+            
+            <section id="upcoming-orders"></section>
+            
+            <section id="previous-orders"></section>
+        </section> -->
+        
+        <main>
+            <section id="orders-section">
+                <section id="cart-items">
+                
+                        <table> 
+                            <thead>
+                                <tr>
+                                    <th>Product Image</th>
+                                    <th>Order Id</th>
+                                    <th>Quantity</th>
+                                    <th>Name</th>
+                                    <th>Billing amount</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    
+                                    <td><img src="" alt="product image"></td>
+                                    <td>Order id</td>
+                                    <td>Product Quantity</td>
+                                    <td>product name</td>
+                                    <td>product prize</td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td><img src="" alt="product image"></td>
+                                    <td>Order id</td>
+                                    <td>Product Quantity</td>
+                                    <td>product name</td>
+                                    <td>product prize</td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td><img src="" alt="product image"></td>
+                                    <td>Order id</td>
+                                    <td>Product Quantity</td>
+                                    <td>product name</td>
+                                    <td>product prize</td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td><img src="" alt="product image"></td>
+                                    <td>Order id</td>
+                                    <td>Product Quantity</td>
+                                    <td>product name</td>
+                                    <td>product prize</td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td><img src="" alt="product image"></td>
+                                    <td>Order id</td>
+                                    <td>Product Quantity</td>
+                                    <td>product name</td>
+                                    <td>product prize</td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td><img src="" alt="product image"></td>
+                                    <td>Order id</td>
+                                    <td>Product Quantity</td>
+                                    <td>product name</td>
+                                    <td>product prize</td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td><img src="" alt="product image"></td>
+                                    <td>Order id</td>
+                                    <td>Product Quantity</td>
+                                    <td>product name</td>
+                                    <td>product prize</td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td><img src="" alt="product image"></td>
+                                    <td>Order id</td>
+                                    <td>Product Quantity</td>
+                                    <td>product name</td>
+                                    <td>product prize</td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td><img src="" alt="product image"></td>
+                                    <td>Order id</td>
+                                    <td>Product Quantity</td>
+                                    <td>product name</td>
+                                    <td>product prize</td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td><img src="" alt="product image"></td>
+                                    <td>Order id</td>
+                                    <td>Product Quantity</td>
+                                    <td>product name</td>
+                                    <td>product prize</td>
+                                </tr>
+                            </tbody>
+                </table>
+                </section>
+                <section id="upcoming-orders"></section>
+                
+                <section id="previous-orders"></section>
+            </section>
+                
+            </main>
+
+
+            <section id="black-screen">
+                <button class="close">+</button>
+            </section>
+            <section id="loginSignup-container">
+                
+                <section id="login-container">
+                    <!-- <h1>Login</h1> -->
+                    <form action="" id="login-form">
+                        <h1>Login</h1>
+                        <label for="username" id="user-label">Username</label>
+                        <input type="text" name="username" id="user-input" required>
+                        
+                        <label for="password" id="pass-label">Password</label>
+                        <input type="password" name="password" id="pass-input" required>
+                        <button name="login" id="login">Login</button>
+                        <button name="newuser" id="newuser">New User</button>
+                    </form>
+                </section>
+                
+                <section id="signup-container">
+                    <form action="" id="signup-form">
+                        <h1>New User</h1>
+                        <label for="signup-username" id="signup-user-label">Username</label>
+                        <input type="text" name="signup-username" id="signup-user-input" required>
+                        
+                        <label for="signup-password" id="signup-pass-label">Password</label>
+                        <input type="password" name="signup-password" id="signup-pass-input" required>
+                        
+                        <label for="signup-cpassword" id="signup-cpass-label">Confirm Password</label>
+                        <input type="password" name="signup-cpassword" id="signup-cpass-input" required>
+                        
+                        <label for="signup-mobile" id="signup-mobile-label">Mobile</label>
+                        <input type="number" name="signup-mobile" id="signup-mobile-input" required>
+                        <button id="signup">Signup</button>
+                        <button type="reset" id="reset">Reset</button>
+                        <button id="existing-user">Already have an account</button>
+                    </form>
+                </section>
+            </section>
+        <footer class="footer"></footer>
+
+        <!-- scipt files -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+    </body>
+</html>

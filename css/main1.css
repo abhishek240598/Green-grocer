@@ -1,0 +1,640 @@
+body {
+  margin: 0; }
+
+.header {
+  background-color: #335c67;
+  padding: 1em;
+  color: darkblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .header .company-title {
+    color: #fff3b0;
+    font-size: 4em;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .header .login {
+    border: none;
+    outline: none;
+    display: inline-block;
+    padding: 10px;
+    align-self: flex-end;
+    font-family: 'Yeon Sung', cursive;
+    border-radius: 4em;
+    background-color: #335c67;
+    color: #fff3b0;
+    font-size: 1em;
+    letter-spacing: 2px;
+    font-weight: 500; }
+  .header .logo-image {
+    height: 100px;
+    width: 150px;
+    filter: brightness(150%); }
+
+.nav-container {
+  background-color: #e09f3e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 20%;
+  padding-right: 20%; }
+  .nav-container a {
+    padding: .5em;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    text-align: center; }
+    .nav-container a:hover {
+      background-color: #b67f2d;
+      color: white; }
+
+#home-section {
+  display: flex;
+  flex-direction: row;
+  height: 55vh; }
+  #home-section #filters {
+    width: 20%;
+    background-color: lightcoral; }
+  #home-section #home-main {
+    width: 80%;
+    background-color: lightsalmon; }
+
+.footer {
+  width: 100%;
+  height: 100px; }
+
+#black-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  scroll-behavior: unset;
+  transform: translate(-100%); }
+  #black-screen .close {
+    color: white;
+    position: absolute;
+    top: 40;
+    right: 600;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-family: 'Caveat', cursive;
+    font-size: 4em;
+    display: inline-block;
+    transform: rotate(45deg); }
+
+#loginsignup-container {
+  height: 60vh;
+  position: absolute;
+  left: 100;
+  top: 100;
+  visibility: hidden;
+  width: 80%; }
+
+#login-container {
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 2%;
+  visibility: hidden;
+  border-radius: 30px; }
+  #login-container h1 {
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 4em;
+    letter-spacing: 5px;
+    margin: 0;
+    border-left: 3px solid white;
+    padding-left: 10px; }
+  #login-container #login-form {
+    margin: 10%;
+    padding: 2em; }
+    #login-container #login-form label {
+      display: block;
+      color: white;
+      letter-spacing: 3px;
+      font-family: 'Yeon Sung', cursive;
+      font-size: 1.1em;
+      margin-left: 25%;
+      margin-top: 5%; }
+    #login-container #login-form input {
+      display: block;
+      text-align: center;
+      margin-left: 30%;
+      padding: 5px;
+      color: white;
+      border: none;
+      border-bottom: 1px solid #f1dd66;
+      background-color: rgba(0, 0, 0, 0); }
+    #login-container #login-form #login {
+      margin-left: 25%;
+      margin-top: 10px;
+      padding: 10px;
+      width: 100px;
+      border: none;
+      border-radius: 25px;
+      background-color: blueviolet;
+      color: white; }
+    #login-container #login-form #newuser {
+      width: 100px;
+      margin-top: 10px;
+      margin-left: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 25px;
+      background-color: #2baf2b;
+      color: white; }
+
+#signup-container {
+  width: 40%;
+  position: absolute;
+  visibility: hidden;
+  left: 30%;
+  top: 2%;
+  bottom: 2%;
+  border-radius: 30px; }
+  #signup-container #signup-form {
+    padding: 1.5em; }
+    #signup-container #signup-form h1 {
+      color: white;
+      font-family: 'Caveat', cursive;
+      font-size: 4em;
+      letter-spacing: 5px;
+      margin: 0;
+      border-left: 3px solid white;
+      padding-left: 10px; }
+    #signup-container #signup-form label {
+      display: block;
+      color: white;
+      letter-spacing: 3px;
+      font-family: 'Yeon Sung', cursive;
+      font-size: 1.3em;
+      margin-left: 30%;
+      margin-top: 5%; }
+    #signup-container #signup-form input {
+      display: block;
+      text-align: center;
+      margin-left: 33%;
+      padding: 5px;
+      color: white;
+      border: none;
+      border-bottom: 1px solid #f1dd66;
+      background-color: rgba(0, 0, 0, 0); }
+    #signup-container #signup-form #signup {
+      margin-left: 30%;
+      margin-top: 10px;
+      padding: 10px;
+      width: 100px;
+      border: none;
+      border-radius: 25px;
+      background-color: #2baf2b;
+      color: white; }
+    #signup-container #signup-form #reset {
+      width: 100px;
+      margin-top: 10px;
+      margin-left: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 25px;
+      background-color: #cf5a36;
+      color: white; }
+    #signup-container #signup-form #existing-user {
+      margin-left: 30%;
+      margin-top: 20px;
+      padding: 5px;
+      width: 220px;
+      border: none;
+      border-radius: 25px;
+      background-color: #2785aa;
+      color: white; }
+
+#faqs fieldset {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  /* height: 150px; */ }
+
+#faqs fieldset section {
+  background-color: #03719C;
+  width: 30%;
+  /* height: 200px; */
+  padding: 10px;
+  box-shadow: 40px 40px #888888;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%); }
+
+/* faq containetr */
+#faqs fieldset section:hover {
+  background-color: #040348;
+  box-shadow: 10px 10px 5px #00FFFF; }
+
+#faqs fieldset section h3 {
+  color: #fff;
+  text-align: center; }
+
+#faqs fieldset section p {
+  word-wrap: break-word;
+  color: #ebd5cc;
+  padding: 30px;
+  /* text-align: center; */ }
+
+#faq-title {
+  margin-left: 2%; }
+
+#contact-main fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: none; }
+
+.eqform {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px; }
+
+#enquiry-form-title {
+  margin-left: 2%;
+  font-size: 1.5em; }
+
+.eqform input, textarea {
+  width: 60%;
+  margin: 10px; }
+
+.eqform select {
+  width: 60%;
+  margin: 10px; }
+
+.eqform label {
+  width: 20%;
+  margin: 10px;
+  color: #fff; }
+
+#submit {
+  width: 60%;
+  background-color: #BFF128;
+  border-radius: 25px; }
+
+table {
+  width: 80%;
+  margin: 50px;
+  border-collapse: collapse; }
+
+tr, td, th {
+  border: 2px solid #666666;
+  padding: 10px;
+  font-size: 18px;
+  text-align: left;
+  height: 50px;
+  border: 0px solid #666666; }
+
+th {
+  background: #7daedf;
+  font-weight: bold; }
+
+tr:nth-child(odd) {
+  background-color: #ddeeff;
+  border-bottom: 2px solid #666666; }
+
+tr:nth-child(even) {
+  background-color: #ddeeff;
+  border-bottom: 2px solid #666666; }
+
+tr:hover {
+  opacity: 0.6;
+  cursor: pointer; }
+
+#products-main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px; }
+  #products-main #product-filter {
+    width: 15%;
+    height: 90vh;
+    position: fixed; }
+    #products-main #product-filter form {
+      margin: 10px;
+      border-radius: 10px;
+      border: 1px solid #335c67;
+      padding: 1em; }
+      #products-main #product-filter form label {
+        display: block;
+        font-size: 1em;
+        margin-bottom: 5px; }
+      #products-main #product-filter form select {
+        margin-bottom: 10px;
+        margin-left: 5px;
+        width: 100%; }
+      #products-main #product-filter form input {
+        margin-left: 5px;
+        margin-bottom: 10px; }
+  #products-main #product-items {
+    width: 85%;
+    margin-left: 15.5%;
+    box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.58); }
+    #products-main #product-items .items {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      flex-wrap: wrap; }
+      #products-main #product-items .items .item-title {
+        position: absolute;
+        top: 0;
+        left: 5%;
+        text-align: center;
+        font-size: 1.5em;
+        letter-spacing: 3px;
+        color: #540b0e; }
+      #products-main #product-items .items .product-container {
+        margin: 12px;
+        margin-top: 60px;
+        box-shadow: 0px 2px 7px 0px rgba(51, 92, 103, 0.9);
+        border-radius: 10px;
+        padding: 1em;
+        position: relative; }
+        #products-main #product-items .items .product-container img {
+          height: 200px;
+          width: 200px;
+          margin-left: auto;
+          object-fit: cover; }
+        #products-main #product-items .items .product-container h4 {
+          margin: 5px 0;
+          color: #335c67; }
+        #products-main #product-items .items .product-container h3 {
+          margin: 5px 0;
+          color: #2a9e33;
+          display: inline; }
+        #products-main #product-items .items .product-container button {
+          border: none;
+          border-radius: 10px;
+          background-color: #335c67;
+          color: #fff3b0;
+          padding: .3em 7px;
+          position: absolute;
+          right: 15;
+          outline: none; }
+        #products-main #product-items .items .product-container:hover {
+          transform: scale(1.05);
+          transition: transform .5s; }
+
+/* Abhishek Shah ---------------------------*/
+
+#slide, #slides>img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#slides img {
+  display: none;
+}
+
+.items-main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 15px; }
+  .items-main .items-wrapper {
+    width: 100%; }
+    .items-main .items-wrapper .items-title{
+     width: 50%;
+     padding-left: 6rem;
+     font-family: 'arial';
+    }
+    .items-main .items-wrapper .item {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-left: 5%;
+      margin-right: 5%}
+     .items-main .items-wrapper .item .item-container {
+        margin: 12px;
+        box-shadow: 0px 2px 7px 0px rgba(51, 92, 103, 0.9);
+        border-radius: 10px;
+        padding: 1em;
+        position: relative; }
+       .items-main .items-wrapper .item .item-container img {
+          height: 160px;
+          width: 160px;
+          margin-left: auto;
+          object-fit: cover; }
+       .items-main .items-wrapper .item .item-container h4 {
+          margin: 5px 0;
+          color: #335c67; }
+       .items-main .items-wrapper .item .item-container h3 {
+          margin: 5px 0;
+          color: #2a9e33;
+          display: inline; }
+       .items-main .items-wrapper .item .item-container button {
+          border: none;
+          border-radius: 10px;
+          background-color: #335c67;
+          color: #fff3b0;
+          padding: .3em 7px;
+          margin-left: 15%;
+          outline: none; }
+       .items-main .items-wrapper .item .item-container:hover {
+          transform: scale(1.05);
+          transition: transform .5s; }
+
+.more-products{
+  margin-top: 10px;
+}     
+
+.column1, .column2 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px 0px;
+  padding: 0 50px;
+}
+
+.column1 img, .column2 img{
+  margin-right: 15px;
+  flex-grow: 1;
+}
+
+
+footer {
+  width: 100%;
+  height: auto;     
+  padding-top: 70px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  background-color: #18181a;
+}
+
+.inner_footer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+}
+
+.inner_footer .logo_container{
+  width: 25%;
+  height: 100%;
+  display: block;
+}
+
+.inner_footer .logo_container img{
+  width: 150px;
+  height: auto; 
+  filter: brightness(150%); 
+}
+
+.footer_third{
+  width: 24%;
+  margin-right: 10px;
+  float: left;
+  height: 100%;
+}
+
+.footer_third:last-child {
+  margin-right: 0;
+}
+
+.footer_third h1 {
+  font-family: 'arial';
+  font-size: 22px;
+  color: white;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer_third a {
+  font-family: 'arial';
+  font-size: 16px;
+  color: white;
+  font-weight: 200;
+  display: block;
+  width: 100%;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+/* Change color of footer links when you hover */
+.footer_third a:hover{
+  color: rgb(224, 159, 62);
+}
+
+.footer_third li {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 20px;
+}
+
+.footer_third .address{
+  color: white;
+  font-family: 'arial';
+  font-size: 16px;
+  font-weight: 200;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.address p{
+  line-height: 0.5;
+}
+
+footer #copyright{
+  width: 100%;
+  padding-top: 3%;;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .header{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header .company-title{
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .header .logo-image{
+    width: 100px;
+    height: 50px;
+    margin-left: 0.5em;
+  }
+
+  .header .login {
+    font-size: 0.5em;
+    margin-left: 0.5em;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .items-main{
+    flex-direction: column;
+  }
+
+  .items-main .items-wrapper .items-title{
+    width: 100%;
+    font-size: 16px;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .items-main .items-wrapper .item {
+    width: 100%;
+    margin: 0;
+  }
+
+  .column1, .column2{
+    flex-direction: column;
+  }
+
+  .column1 img, .column2 img{
+    width: 100%;
+    margin: 10px 0px;
+    object-fit: cover;
+  }
+  
+  #slide, #slides>img {
+    height: 250px;
+  }
+
+  .footer .inner_footer {
+    width: 90%;
+  }
+
+  .inner_footer .logo_container {
+    padding-right: 17%;
+  }
+
+  .logo_container, .footer_third {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
